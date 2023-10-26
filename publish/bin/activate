@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/eva/Documents/Backends/ActividadKafka/publish"
+VIRTUAL_ENV="/home/lauradayana/KAFKA/ActividadKafka/publish"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

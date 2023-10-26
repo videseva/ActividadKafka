@@ -5,6 +5,7 @@ class Vehiculo(BaseModel):
     id: Optional[int]
     fecha :str
     hora :str
+    nombre: str
     email :str
     celular: str
     tipoVehiculo: str

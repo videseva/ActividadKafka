@@ -38,7 +38,7 @@ def get_vehiculo(id: str):
 
 @vehiculo_api.post("/vehiculo", tags=["vehiculo"], response_model=Vehiculo, description="Crear un nuevo ticket")
 def create_vehiculo(v: Vehiculo):
-    new_vehiculo = { "id": v.id,"fecha": v.fecha, "hora": v.hora,  "nombre": v.nombre, "celular":v.celular,"tipoVehiculo": v.tipoVehiculo,  "matricula": v.matricula, "totalPagar": v.totalPagar}
+    new_vehiculo = { "id": v.id,"fecha": v.fecha, "hora": v.hora,  "nombre": v.nombre, "email": v.email,"celular":v.celular,"tipoVehiculo": v.tipoVehiculo,  "matricula": v.matricula, "totalPagar": v.totalPagar}
     result = conn.execute(vehiculos.insert().values(new_vehiculo))
     conn.commit()
     print(new_vehiculo)

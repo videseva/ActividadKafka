@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/eva/Documents/Backends/ActividadKafka/publish"
+set -gx VIRTUAL_ENV "/home/lauradayana/KAFKA/ActividadKafka/publish"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
