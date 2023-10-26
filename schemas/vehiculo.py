@@ -1,0 +1,15 @@
+from typing import Optional
+from pydantic import BaseModel
+
+class Vehiculo(BaseModel):
+    id: Optional[int]
+    fecha :str
+    hora :str
+    email :str
+    celular: str
+    tipoVehiculo: str
+    matricula:str
+    totalPagar:str
+
+class VehiculoCount(BaseModel):
+    total: int
